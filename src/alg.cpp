@@ -23,11 +23,9 @@ void makeTree(BST<std::string>& tree, const char* filename) {
             if ('A' <= symbol && symbol <= 'Z') {
                 symbol += ('a' - 'A');
                 word += symbol;
-            }
-            else if ('a' <= symbol && symbol <= 'z') {
+            } else if ('a' <= symbol && symbol <= 'z') {
                 word += symbol;
-            }
-            else {
+            } else {
                 isReadingWord = false;
             }
         }
